@@ -1,9 +1,12 @@
 \AtBeginDocument{%
 \begingroup\pagestyle{empty}\raggedleft\parindent0pt
+
+\blankpage
+
 \begin{vplace}[2]
 \begin{center}
 \MyriadPro
-Леонид Иванович Добычин
+Леонид Добычин
 %\autor
 %\titulagemfront{}
 \end{center}
@@ -71,30 +74,44 @@
 \clearpage
 \thispagestyle{empty}
 \phantom{a}
+\begin{flushleft}
+\vspace*{-1.5cm}
+{\small\MyriadPro{Contos russos modernos (1900-1930)}}
+\end{flushleft}
 \vfill
 %\newpage
 %\centering[This page intentionally left blank]
 \vfill
 \addtocounter{page}{0}
-\begin{vplace}[2]
-\begin{center}
-\MyriadPro
-{\normalsize \autor \par\vspace{-7ex}}
+\begin{flushleft}
+{\MyriadPro\Large
+\textbf{A cidade Ene}\\
+{\large Leonid Dobýtchin}\\
+{\normalsize\emph{Леонид Добычин}}
+}
+\bigbreak
+\bigbreak
+\bigbreak
+\bigbreak
+\bigbreak
+
+{\normalsize\MyriadPro{
+Tradução do russo \textbf{Moissei e Daniela Mountian}\\
+Prefácio \textbf{Valéri Sájin}\\
+Capa e ilustração \textbf{Karina Aoki}\\
+Coordenação \textbf{Daniela Mountian}}}\\
+%\begin{vplace}[2]
+%\begin{center}
+%\MyriadPro
+%{\normalsize \autor \par\vspace{-7ex}}
 %\smallbreak
-\end{center}
-\end{vplace}
+%\end{center}
+%\end{vplace}
 
-\begin{center}
-\textbf{\MyriadPro
-\Huge\textbf{A cidade Ene}}
+%\begin{center}
+%\textbf{\MyriadPro
+%\Huge\textbf{A cidade Ene}}
 %\titulagem
-\bigbreak
-\bigbreak
-\bigbreak
-\bigbreak
-\bigbreak
-
-{\scriptsize\MyriadPro{Tradução do russo\\Moissei Mountian}}
 %\ifdef{\organizador}{{\small {\organizador} (organização)} \par}{}
 %\bigbreak
 %\ifdef{\introdutor}{{\small {\introdutor} (prefácio)} \par}{}
@@ -110,7 +127,7 @@
 %logos
 \vfill
 \ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{\logo}\hfill\logoum{}\\ São Paulo\_\the\year}}{\includegraphics[width=3cm]{logos.jpg}}%\break{} Rio de Janeiro\_\the\year}
-\end{center}
+\end{flushleft}
 %\end{vplace}
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
