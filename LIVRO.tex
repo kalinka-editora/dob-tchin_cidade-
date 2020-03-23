@@ -92,7 +92,12 @@
 %\setsansfont{MyriadPro}
 %\renewcommand{\familydefault}{\sfdefault}
 %\DeclareTextFontCommand{\textmyfont}{MyriadPro}
-\newfontfamily\MyriadPro[Ligatures=TeX]{MyriadPro-Light}	
+%\newfontfamily\MyriadPro[Ligatures=TeX]{MyriadPro-Regular}
+%\newfontfamily\MyriadPro[Ligatures=TeX]{MyriadPro-Light}
+\newcommand{\slsc}[1]{\fontspec[SmallCapsFeatures={FakeSlant=0.6}]{MyriadPro-LightIt}\textsc{#1}\fontspec[]{MyriadPro-LightIt}}
+
+\newfontfamily\MyriadPro{MyriadPro-Regular}[
+ItalicFont = MyriadPro-Light]	
 %\newfontfamily\BebasNeue[Ligatures=TeX]{BebasNeue-Regular}	
 \newfontfamily\MinionPro[Ligatures=TeX]{MinionPro-Regular}	
 \newfontfamily\Georgia[Ligatures=TeX]{Georgia}	
